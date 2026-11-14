@@ -1,0 +1,145 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: white;
+}
+
+.top {
+  background: #333;
+  color: white;
+  padding: 20px 0 30px 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 0 0 20px 0;
+}
+
+.filters {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.filters input,
+.filters select {
+  padding: 6px;
+  margin: 0 5px;
+  border: none;
+  border-radius: 3px;
+  background: #f1f1f1;
+}
+
+.green-btn {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 7px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.cart {
+  width: 80%;
+  margin: 30px auto 0 auto;
+  font-size: 14px;
+}
+
+.cart ul {
+  padding-left: 20px;
+}
+
+.cart li {
+  margin-bottom: 4px;
+}
+
+.cart button {
+  background: white;
+  border: none;
+  padding: 2px 6px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: #f9f9f9;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+}
+
+.card h4 {
+  color: #333;
+}
+
+.card p {
+  color: #666;
+}
+
+.blue-btn {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 3px;
+}
+
+.pages {
+  text-align: center;
+  padding: 10px 0 30px 0;
+}
+
+.pages button {
+  padding: 6px 12px;
+  margin: 2px;
+  border: 1px solid #007bff;
+  background: white;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.pages button.active {
+  background: #007bff;
+  color: white;
+}
+
+.details {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.details-box {
+  background: white;
+  width: 400px;
+  max-height: 90%;
+  overflow: auto;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.details-box img {
+  height: 200px;
+  object-fit: contain;
+}

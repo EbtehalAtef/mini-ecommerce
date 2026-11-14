@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Store</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="top">
+      <h1>My Store</h1>
+
+      <div class="filters">
+        <input type="text" id="search" placeholder="Search for products..." />
+        <select id="category">
+          <option value="all">All Categories</option>
+        </select>
+        <input type="number" id="minPrice" placeholder="Min Price" />
+        <input type="number" id="maxPrice" placeholder="Max Price" />
+        <button id="applyBtn" class="green-btn">Apply Filters</button>
+      </div>
+
+      <div class="filters">
+        <select id="sort">
+          <option value="none">Sort by</option>
+          <option value="name-asc">Name (A - Z)</option>
+          <option value="name-desc">Name (Z - A)</option>
+          <option value="price-asc">Price (Low to High)</option>
+          <option value="price-desc">Price (High to Low)</option>
+          <option value="rating-desc">Rating (High to Low)</option>
+          <option value="rating-asc">Rating (Low to High)</option>
+        </select>
+      </div>
+
+      <div class="cart">
+        <h3>Shopping Cart</h3>
+        <ul id="cartList"></ul>
+        <p>Total Quantity: <span id="totalQuantity">0</span></p>
+        <p>Total Price: $<span id="totalPrice">0</span></p>
+      </div>
+    </div>
+
+    <div id="products" class="products"></div>
+    <div id="pages" class="pages"></div>
+
+    <div id="details" class="details">
+      <div class="details-box">
+        <img id="detailsImage" src="" />
+        <h3 id="detailsTitle"></h3>
+        <p id="detailsCategory"></p>
+        <p id="detailsDescription"></p>
+        <p id="detailsPrice"></p>
+        <p id="detailsRating"></p>
+        <button id="closeBtn" class="blue-btn">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
